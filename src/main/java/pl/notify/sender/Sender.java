@@ -7,6 +7,6 @@ import pl.notify.model.Notification;
 @Component
 
 public interface Sender {
-     @Autowired
+
      void send(Notification notification);
 }

@@ -13,7 +13,7 @@ import java.util.Scanner;
 @Component
 @Primary
 public class ConsolNotificationReader implements Reader {
-    @Autowired
+
     public List<Notification> getNotifications() throws IOException {
         String username;
         String email;

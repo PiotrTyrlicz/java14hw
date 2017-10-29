@@ -13,7 +13,7 @@ import pl.notify.sender.EmailNotificationSender;
 import pl.notify.sender.Sender;
 import pl.notify.sender.SmsNotificationSender;
 
-//@Configuration
+@Configuration
 public class AppConfig {
 
 //    @Bean

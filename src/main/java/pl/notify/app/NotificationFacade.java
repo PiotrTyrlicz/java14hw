@@ -24,7 +24,7 @@ public class NotificationFacade {
         this.sender = sender;
         this.logger = logger;
     }
-    @Autowired
+
     public void sendNotifications() throws IOException {
         List<Notification> notifications = reader.getNotifications();
         for (Notification notification : notifications) {

@@ -13,7 +13,7 @@ import java.io.IOException;
 public class FileLogger implements NotifyLogger {
 
     @Override
-    @Autowired
+
     public void log(String message) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("log.txt", true))){
             writer.write("LOG INFO " + System.currentTimeMillis() + " " + message);

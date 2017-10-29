@@ -13,7 +13,7 @@ import java.util.List;
 @Component
 
 public class FileNotificationReader implements  Reader{
-    @Autowired
+
     public List<Notification> getNotifications() throws IOException {
         List<String> notificationsString = Files.readAllLines(Paths.get("notifications.csv"));
         List<Notification> notifications = new ArrayList<>();

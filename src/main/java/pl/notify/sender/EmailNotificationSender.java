@@ -8,7 +8,7 @@ import pl.notify.model.Notification;
 @Component
 @Primary
 public class EmailNotificationSender implements Sender {
-    @Autowired
+
     public void send(Notification notification) {
         System.out.println("Sending email to " + notification.getEmail());
     }
