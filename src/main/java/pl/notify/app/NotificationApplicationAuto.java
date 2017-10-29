@@ -4,6 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import	pl.notify.config.AutoApplicationConfig;
 import pl.notify.config.AppConfig;
 
 import java.io.IOException;
@@ -16,11 +17,12 @@ import java.io.IOException;
  * obiekty w kontenerze
  */
 
-@Configuration
-@ComponentScan("pl.notify")
+//@Configuration
+//@ComponentScan("pl.notify")
 public class NotificationApplicationAuto {
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationConfigApplicationContext(NotificationApplicationAuto.class);
+        //NotificationApplicationAuto
+        ApplicationContext context = new AnnotationConfigApplicationContext(AutoApplicationConfig.class);
         NotificationFacade notificationFacade = context.getBean(NotificationFacade.class);
         try {
             notificationFacade.sendNotifications();

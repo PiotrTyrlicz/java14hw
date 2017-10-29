@@ -18,5 +18,6 @@ public class NotificationApplicationJava {
         } catch (IOException e) {
             System.err.println("Nie udało się wysłać powiadomień");
         }
+
     }
 }

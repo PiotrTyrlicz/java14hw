@@ -11,6 +11,7 @@ import java.io.IOException;
 /**
  * Konfiguracja beanów springa w pliku beans-config.xml
  */
+
 public class NotificationApplicationXML {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans-config.xml");

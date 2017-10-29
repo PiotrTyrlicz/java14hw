@@ -1,5 +1,6 @@
 package pl.notify.reader;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import pl.notify.model.Notification;
 
@@ -10,8 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class FileNotificationReader {
 
+public class FileNotificationReader implements  Reader{
+    @Autowired
     public List<Notification> getNotifications() throws IOException {
         List<String> notificationsString = Files.readAllLines(Paths.get("notifications.csv"));
         List<Notification> notifications = new ArrayList<>();
